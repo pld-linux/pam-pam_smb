@@ -46,9 +46,9 @@ senhas são mantidas apenas no servidor SMB.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{etc,lib/security}
+install -d $RPM_BUILD_ROOT{%{_sysconfdir},/%{_lib}/security}
 
-install pam_smb_auth.so $RPM_BUILD_ROOT/lib/security
+install pam_smb_auth.so $RPM_BUILD_ROOT/%{_lib}/security
 install pam_smb.conf.example $RPM_BUILD_ROOT%{_sysconfdir}/pam_smb.conf
 
 %clean
@@ -57,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README CHANGES TODO pam_smb.conf.example
-%attr(755,root,root) /lib/security/pam_smb_auth.so
+%attr(755,root,root) /%{_lib}/security/pam_smb_auth.so
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/pam_smb.conf
