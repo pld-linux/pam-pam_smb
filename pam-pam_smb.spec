@@ -1,6 +1,6 @@
 %define 	modulename pam_smb
-Summary:	PAM module for auth UNIX users using an NT
-Summary(pl):	Modu³ PAM autentyfikuj±cy u¿ytkowników Linuksa na NT
+Summary:	PAM module for auth UNIX users using an SMB server
+Summary(pl):	Modu³ PAM uwierzytelniaj±cy u¿ytkowników przy u¿yciu serwera SMB
 Summary(pt_BR):	módulo de autenticação PAM para autenticação contra servidor SMB
 Name:		pam-%{modulename}
 Version:	1.1.7
@@ -12,11 +12,11 @@ Group:		Networking
 Source0:	http://www.csn.ul.ie/~airlied/%{modulename}/%{modulename}-%{version}.tar.gz
 # Source0-md5:	44b4881709e209a40239555f30ab5222
 Patch0:		%{name}-ac_fixes.patch
-URL:		http://www.csn.ul.ie/~airlied/%{modulename}/
+URL:		http://www.csn.ul.ie/~airlied/pam_smb/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pam-devel
-Obsoletes:	%{modulename}
+Obsoletes:	pam_smb
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +24,7 @@ PAM module which allows authentication of UNIX users using an
 Microsoft Windows NT(TM) server (or domain).
 
 %description -l pl
-Modu³ PAM pozwalaj±cy na autentyfikacjê u¿ytkowników Linuksa na
+Modu³ PAM pozwalaj±cy na uwierzytelnianie u¿ytkowników Linuksa na
 serwerze (lub w domenie) Microsoft Windows NT(TM).
 
 %description -l pt_BR
