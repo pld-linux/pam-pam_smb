@@ -4,7 +4,7 @@ Summary(pl):	Modu³ PAM uwierzytelniaj±cy u¿ytkowników przy u¿yciu serwera SMB
 Summary(pt_BR):	módulo de autenticação PAM para autenticação contra servidor SMB
 Name:		pam-%{modulename}
 Version:	1.1.7
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Vendor:		David Airlie <airlied@samba.org>
