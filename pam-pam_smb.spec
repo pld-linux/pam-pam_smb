@@ -4,6 +4,7 @@ Summary(pt_BR):	módulo de autenticação PAM para autenticação contra servidor SMB
 Name:		pam-pam_smb
 Version:	1.1.7
 Release:	1
+Epoch:		1
 License:	GPL
 Vendor:		David Airlie <airlied@samba.org>
 Group:		Networking
