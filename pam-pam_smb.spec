@@ -32,7 +32,7 @@ workstations também são registrados como usuários NetBIOS, pois as
 senhas são mantidas apenas no servidor SMB.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n pam_smb
 %patch0 -p1
 
 %build
