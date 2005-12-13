@@ -58,4 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README CHANGES TODO pam_smb.conf.example
 %attr(755,root,root) /%{_lib}/security/pam_smb_auth.so
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/pam_smb.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/pam_smb.conf
