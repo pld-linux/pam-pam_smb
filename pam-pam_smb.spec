@@ -1,7 +1,7 @@
 %define 	modulename pam_smb
 Summary:	PAM module for auth UNIX users using an SMB server
-Summary(pl):	Modu≥ PAM uwierzytelniaj±cy uøytkownikÛw przy uøyciu serwera SMB
-Summary(pt_BR):	mÛdulo de autenticaÁ„o PAM para autenticaÁ„o contra servidor SMB
+Summary(pl.UTF-8):   Modu≈Ç PAM uwierzytelniajƒÖcy u≈ºytkownik√≥w przy u≈ºyciu serwera SMB
+Summary(pt_BR.UTF-8):   m√≥dulo de autentica√ß√£o PAM para autentica√ß√£o contra servidor SMB
 Name:		pam-%{modulename}
 Version:	1.1.7
 Release:	3
@@ -23,16 +23,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 PAM module which allows authentication of UNIX users using an
 Microsoft Windows NT(TM) server (or domain).
 
-%description -l pl
-Modu≥ PAM pozwalaj±cy na uwierzytelnianie uøytkownikÛw Linuksa na
+%description -l pl.UTF-8
+Modu≈Ç PAM pozwalajƒÖcy na uwierzytelnianie u≈ºytkownik√≥w Linuksa na
 serwerze (lub w domenie) Microsoft Windows NT(TM).
 
-%description -l pt_BR
-O pam_smb È um mÛdulo PAM que permite autenticaÁ„o de usu·rios contra
+%description -l pt_BR.UTF-8
+O pam_smb √© um m√≥dulo PAM que permite autentica√ß√£o de usu√°rios contra
 um servidor SMB, que por sua vez pode ser um servidor Samba ou Windows
-NT. Pode ser muito ˙til em "redes Windows" onde todos os usu·rios de
-workstations tambÈm s„o registrados como usu·rios NetBIOS, pois as
-senhas s„o mantidas apenas no servidor SMB.
+NT. Pode ser muito √∫til em "redes Windows" onde todos os usu√°rios de
+workstations tamb√©m s√£o registrados como usu√°rios NetBIOS, pois as
+senhas s√£o mantidas apenas no servidor SMB.
 
 %prep
 %setup -q -n %{modulename}
