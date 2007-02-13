@@ -1,7 +1,7 @@
 %define 	modulename pam_smb
 Summary:	PAM module for auth UNIX users using an SMB server
-Summary(pl.UTF-8):   Moduł PAM uwierzytelniający użytkowników przy użyciu serwera SMB
-Summary(pt_BR.UTF-8):   módulo de autenticação PAM para autenticação contra servidor SMB
+Summary(pl.UTF-8):	Moduł PAM uwierzytelniający użytkowników przy użyciu serwera SMB
+Summary(pt_BR.UTF-8):	módulo de autenticação PAM para autenticação contra servidor SMB
 Name:		pam-%{modulename}
 Version:	1.1.7
 Release:	3
