@@ -9,7 +9,7 @@ Epoch:		1
 License:	GPL
 Vendor:		David Airlie <airlied@samba.org>
 Group:		Networking
-Source0:	http://www.csn.ul.ie/~airlied/%{modulename}/%{modulename}-%{version}.tar.gz
+Source0:	http://www.csn.ul.ie/~airlied/pam_smb/%{modulename}-%{version}.tar.gz
 # Source0-md5:	44b4881709e209a40239555f30ab5222
 Patch0:		%{name}-ac_fixes.patch
 URL:		http://www.csn.ul.ie/~airlied/pam_smb/
